@@ -1,6 +1,6 @@
 # Specify the provider and access details
 #https://www.terraform.io/docs/providers/aws/
-
+terraform {   backend "remote" {     hostname = "app.terraform.io"     organization = "F5-Meetup"      workspaces {       name = "f5"     }   } } 
 # Create a VPC to launch our instances into
 resource "aws_vpc" "abc" {
   cidr_block = "10.0.0.0/16"
