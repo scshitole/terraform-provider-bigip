@@ -45,3 +45,11 @@ variable "instance_type" {
   default = "m4.xlarge"
 }
 
+variable "tags_owner" {
+  description = "AWS tag type Owner"
+}
+
+variable "tags_ttl" {
+  description = "AWS tag type TTL"
+}
+
