@@ -126,16 +126,16 @@ resource "aws_security_group" "allow_all" {
 #A key pair is used to control login access to EC2 instances
 resource "aws_key_pair" "auth" {
   key_name   = "${var.key_name}"
-  public_key = "${file(var.public_key_path)}"
+  public_key = "${var.public_key_path}"
 }
 
 resource "aws_key_pair" "auth1" {
   key_name   = "${var.key_name1}"
-  public_key = "${file(var.public_key_path1)}"
+  public_key = "${var.public_key_path1}"
 }
 resource "aws_key_pair" "auth2" {
   key_name   = "${var.key_name2}"
-  public_key = "${file(var.public_key_path2)}"
+  public_key = "${var.public_key_path2}"
 }
 
 
