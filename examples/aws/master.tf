@@ -153,7 +153,7 @@ resource "aws_instance" "SCS_F5" {
     root_block_device { delete_on_termination = true }
     tags {
         Name = "SCS_F5"
-        Owner = "${var.tags_owner}"
+    #    Owner = "${var.tags_owner}"
         TTL = "${var.tags_ttl}"
     }
 }
@@ -172,7 +172,7 @@ resource "aws_instance" "SCS_appserver1" {
     root_block_device { delete_on_termination = true }
     tags {
         Name = "SCS_appserver1"
-        Owner = "${var.tags_owner}"
+    #    Owner = "${var.tags_owner}"
         TTL = "${var.tags_ttl}"
     }
 }
@@ -191,7 +191,7 @@ resource "aws_instance" "SCS_appserver2" {
     root_block_device { delete_on_termination = true }
     tags {
         Name = "SCS_appserver2"
-        Owner = "${var.tags_owner}"
+    #    Owner = "${var.tags_owner}"
         TTL = "${var.tags_ttl}"
     }
 }
